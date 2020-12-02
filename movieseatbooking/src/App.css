@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 700px;
+  justify-content: space-evenly;
+  margin: 3% auto;
+  background-color: #9298a1;
+  border-radius: 10px;
+  color: #242333;
+}
+.row {
+  /* justify-content: center;
+  align-items: flex-start; */
+  display: flex;
+}
+.col-md-2 {
+  padding: 0px 12px;
+}
+.movies-list {
+  width: 27%;
+  height: 5vh;
+  font-size: 1vw;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 40%;
+  margin: 15px 0;
+  /* transform: rotateY(-65deg); */
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.seat {
+  width: 25px;
+  height: 25px;
+  border-radius: 50% 50% 0px 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.seat:hover {
+  transform: scale(1.1);
+}
+.seat-grey {
+  background-color: #ddd;
+}
+.seat-black {
+  background-color: black;
+}
+.movie-layout {
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .App {
+    background-color: transparent;
+  }
+}
