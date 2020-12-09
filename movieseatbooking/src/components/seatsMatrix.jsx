@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-// import Seat from "./seat.jsx"
-
-// const seatStatus = this.props.seatColor ? this.props.seatColor : "seat-grey";
 
 class SeatsMatrix extends Component {
- 
+
     render() { 
     const seatStatus = "seat-grey";
 
@@ -14,38 +11,38 @@ class SeatsMatrix extends Component {
 			{
             seatNumbers.map((seatNumber) => {
             // return <Seat seatno={seatNumber} key={seatNumber}/>
-              return <div key={seatNumber} className="col-md-2"><div className={`seat seat-${seatNumber} ${seatStatus}`} onClick={(e) => seatClickHandler(e,seatNumber)}/></div>
+              return <div key={seatNumber} className="col-md-2"><div className={`seat seat-${seatNumber} ${seatStatus}`} onClick={(e) =>this.props.seatClickHandler(e,seatNumber)}/></div>
             })
 			}
 		</div>
 	)
 }
 
-const seatClickHandler = (event, seatNumber) => {
+// const seatClickHandler = (event, seatNumber) => {
 
-        const seatColor = document.querySelector(`.seat-${seatNumber}`).classList    
+//         const seatColor = document.querySelector(`.seat-${seatNumber}`).classList    
 
-        if (this.props.arrseatNumbers.includes(seatNumber)) {
-            // const newMovieSeats = this.props.arrseatNumbers.filter((seat) => {
-            //     return seat !== seatNumber
-            // })
-            // alert(newMovieSeats)
-            seatColor.remove("seat-black")
-            seatColor.add("seat-grey") 
-            let index = this.props.arrseatNumbers.indexOf(seatNumber);
-            alert(index)
-            if (index !== -1) {
-                this.props.arrseatNumbers.splice(index, 1); 
-                // this.setState({this.props.arrseatNumbers:arr});             
-            }  
-        } else {
-            seatColor.remove("seat-grey")
-            seatColor.add("seat-black")
-            this.props.arrseatNumbers.push(seatNumber);
-            this.setState({...this.props.arrseatNumbers,seatNumber})     
-        }
-   //return 0;
-  }
+//         if (this.props.arrseatNumbers.includes(seatNumber)) {
+//             // const newMovieSeats = this.props.arrseatNumbers.filter((seat) => {
+//             //     return seat !== seatNumber
+//             // })
+//             // alert(newMovieSeats)
+//             seatColor.remove("seat-black")
+//             seatColor.add("seat-grey") 
+//             let index = this.props.arrseatNumbers.indexOf(seatNumber);
+//            // alert(index)
+//             if (index !== -1) {
+//                 this.props.arrseatNumbers.splice(index, 1); 
+//                 // this.setState({this.props.arrseatNumbers:arr});             
+//             }  
+//         } else {
+//             seatColor.remove("seat-grey")
+//             seatColor.add("seat-black")
+//             this.props.arrseatNumbers.push(seatNumber);
+//             this.setState({...this.props.arrseatNumbers,seatNumber})               
+//         }
+//    //return 0;
+//   }
 
         return ( 
             <React.Fragment>
