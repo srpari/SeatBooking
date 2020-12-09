@@ -3,11 +3,12 @@ import React, { Component } from 'react';
 class PriceCalculator extends Component {
     state = {  }
     render() { 
-        return (  
-            <div>
-                Price Calculator
-            </div>
-
+        let count = this.props.arrseatNumbers.length;
+        let price = this.props.moviePrice;
+        return (            
+          <div>
+          You have selected {count} seats and the total price is {price}
+          </div>
         );
     }
 }
