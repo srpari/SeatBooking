@@ -35,7 +35,7 @@ class App extends Component {
             const newMovieSeats = this.state.arrseatNumbers.filter((seat) => {
                 return seat !== seatNumber
             })
-            alert(newMovieSeats)
+            // alert(newMovieSeats)
             seatColor.remove("seat-black")
             seatColor.add("seat-grey") 
             this.setState({
