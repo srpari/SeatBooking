@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 700px;
+  height: 630px;
   justify-content: space-evenly;
   margin: 3% auto;
   background-color: #9298a1;
@@ -27,7 +27,7 @@
 
 .screen {
   background-color: #fff;
-  height: 70px;
+  height: 60px;
   width: 40%;
   margin: 15px 0;
   /* transform: rotateY(-65deg); */
