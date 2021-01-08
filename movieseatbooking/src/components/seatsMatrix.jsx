@@ -18,32 +18,6 @@ class SeatsMatrix extends Component {
 	)
 }
 
-// const seatClickHandler = (event, seatNumber) => {
-
-//         const seatColor = document.querySelector(`.seat-${seatNumber}`).classList    
-
-//         if (this.props.arrseatNumbers.includes(seatNumber)) {
-//             // const newMovieSeats = this.props.arrseatNumbers.filter((seat) => {
-//             //     return seat !== seatNumber
-//             // })
-//             // alert(newMovieSeats)
-//             seatColor.remove("seat-black")
-//             seatColor.add("seat-grey") 
-//             let index = this.props.arrseatNumbers.indexOf(seatNumber);
-//            // alert(index)
-//             if (index !== -1) {
-//                 this.props.arrseatNumbers.splice(index, 1); 
-//                 // this.setState({this.props.arrseatNumbers:arr});             
-//             }  
-//         } else {
-//             seatColor.remove("seat-grey")
-//             seatColor.add("seat-black")
-//             this.props.arrseatNumbers.push(seatNumber);
-//             this.setState({...this.props.arrseatNumbers,seatNumber})               
-//         }
-//    //return 0;
-//   }
-
         return ( 
             <React.Fragment>
             {/* <div className="row">
