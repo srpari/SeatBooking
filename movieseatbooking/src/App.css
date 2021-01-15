@@ -10,19 +10,28 @@
   background-color: #9298a1;
   border-radius: 10px;
   color: #242333;
+  font-size: 1em;
+}
+.container {
+  display: flex;
+}
+h1 {
+  font-size: 2em;
 }
 .row {
   display: flex;
+  /* flex-wrap: wrap; */
 }
 .col-md-2 {
-  padding: 0px 12px;
+  padding: 0px 8px;
+  font-size: 1em;
+  /* padding: 6px; */
 }
 .movies-list {
   width: 27%;
   height: 5vh;
-  font-size: 1vw;
+  font-size: 0.8em;
 }
-
 .screen {
   background-color: #fff;
   height: 60px;
@@ -38,6 +47,8 @@
   border-radius: 50% 50% 0px 0px;
   margin-bottom: 5px;
   cursor: pointer;
+  display: flex;
+  /* justify-content: space-between; */
 }
 .seat:hover {
   transform: scale(1.1);
@@ -50,4 +61,32 @@
 }
 .movie-layout {
   flex-wrap: nowrap;
+}
+
+@media (max-width: 940px) {
+  .seat {
+    width: 23px;
+    height: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .seat {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 705px) {
+  .seat {
+    width: 15px;
+    height: 15px;
+  }
+  .App {
+    font-size: 0.8em;
+    word-wrap: break-word;
+  }
+  .col-md-2 {
+    padding: 0px 2px 0px 2px;
+    font-size: 0.8em;
+    /* padding: 6px; */
+  }
 }

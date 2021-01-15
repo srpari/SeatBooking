@@ -7,7 +7,7 @@ class PriceCalculator extends Component {
         let price = this.props.moviePrice;
         return (            
           <div>
-          You have selected {count} seats and the total price is {price * count}
+          You have selected {count} seats and the total price is {price * count}$
           </div>
         );
     }
